@@ -1,0 +1,114 @@
+﻿@model ThietKeNoiThat.Models.TinTuc
+
+@{
+    ViewBag.Title = "DeleteTT";
+    Layout = "~/Views/Shared/Layoutadmin.cshtml";
+}
+
+<h2>DeleteProduct</h2>
+<div>
+
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.tentt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tentt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.link)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.link)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NoiDung)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NoiDung)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.img)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.img)
+        </dd>
+
+        
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
+<div id="layoutSidenav">
+    <div id="layoutSidenav_content">
+        <main>
+            <div class="container-fluid">
+                <h3>Are you sure you want to delete this?</h3>
+                <div>
+                    <h4>DELETE PRODUCT</h4>
+                    <hr />
+                    <dl class="dl-horizontal">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.tentt)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.tentt)
+                        </dd>
+
+                        <dt>
+                            @Html.LabelFor(model => model.img)
+                        </dt>
+
+                        <dd>
+                            <img style="width:150px; height:150px" src="@Url.Content("~/Content/ImagesProduct/"+ Model.img)" />
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.link)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.link)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.NoiDung)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.NoiDung)
+                        </dd>
+
+                    </dl>
+
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-actions no-color">
+                            <input type="submit" value="Delete" class="btn btn-danger" /> |
+                            @Html.ActionLink("Back to List", "TicTuc")
+                        </div>
+                    }
+                </div>
+            </div>
+        </main>
+    </div>
+</div>

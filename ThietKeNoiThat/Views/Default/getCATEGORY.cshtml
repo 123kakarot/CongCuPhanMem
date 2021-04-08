@@ -1,0 +1,21 @@
+﻿@model IEnumerable<ThietKeNoiThat.Models.PRODUCT>
+@foreach (var item in Model)
+{
+    <div class="col-md-6 col-lg-4" >
+        <div class="card text-center card-product" style="height:300px">
+            <div class="card-product__img">
+                <img class="card-img" src="~/Content/img/product/@item.IMGPath" alt="">
+                <ul class="card-product__imgOverlay">
+                    <li><button><i class="ti-search"></i></button></li>
+                    <li><button><i class="ti-shopping-cart"></i></button></li>
+                    <li><button><i class="ti-heart"></i></button></li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <p>Accessories</p>
+                <h4 class="card-product__title"><a href="#">@item.Name</a></h4>
+                <p class="card-product__price">$150.00</p>
+            </div>
+        </div>
+    </div>
+}

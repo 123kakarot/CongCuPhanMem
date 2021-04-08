@@ -1,0 +1,54 @@
+﻿@model IEnumerable<ThietKeNoiThat.Models.PRODUCT>
+
+
+@{
+    ViewBag.Title = "SanPham";
+    Layout = "~/Views/Shared/Layoutadmin.cshtml";
+}
+
+<div id="layoutSidenav">
+    <div id="layoutSidenav_content">
+        <main>
+            <div class="container-fluid">
+                <div class="card mb-4">
+                    <div class="card-header"><i class="fas fa-table mr-1"></i>DataTable</div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>LoaiNoiThat</th>
+                                        <th>Price</th>
+                                        <th>Image</th>
+                                        <td>NoiDung</td>
+                                        <th>Edit</th>
+                                        <th>Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                                <td>
+                                                @item.Name
+                                            </td>
+                                            <td>@item.LoaiNoiThat</td>
+                                            <td>@item.PRICE</td>
+                                            <td width="150px"><img style="width:150px; height:150px" src="@Url.Content("~/Content/ImagesProduct/"+item.IMGPath)" /></td>
+                                            <td>@item.MOTA</td>
+                                            <td>@Html.ActionLink("Edit", "EditProduct", new { id = item.ID })</td>
+                                            <td>@Html.ActionLink("Delete", "DeleteProduct", new { id = item.ID })</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                            @Html.ActionLink("Create New", "CreateProduct")
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+<a href="#">content</a>

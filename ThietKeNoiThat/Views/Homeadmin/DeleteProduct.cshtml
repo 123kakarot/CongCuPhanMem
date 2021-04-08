@@ -1,0 +1,146 @@
+﻿@model ThietKeNoiThat.Models.PRODUCT
+
+@{
+    ViewBag.Title = "DeleteProduct";
+    Layout = "~/Views/Shared/Layoutadmin.cshtml";
+}
+@section jsFooter{
+    <script>
+       $('#btnSelectImage').on('click', function (e) {
+           e.preventDefault();
+           var finder = new CKFinder();
+           finder.selectActionFunction = function (url) {
+               $('#txtImage').val(url);
+           };
+           finder.popup();
+       })
+       var editor = CKEDITOR.replace('txtContent', {customConfig: '/Plugin/ckeditor/config.js'})
+    </script>
+}
+
+<h2>DeleteProduct</h2>
+<div>
+
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Link)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Link)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hide)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hide)
+        </dd>
+
+     
+
+       
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IMGPath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IMGPath)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PRICE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PRICE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LoaiNoiThat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LoaiNoiThat)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
+<div id="layoutSidenav">
+    <div id="layoutSidenav_content">
+        <main>
+            <div class="container-fluid">
+                <h3>Are you sure you want to delete this?</h3>
+                <div>
+                    <h4>DELETE PRODUCT</h4>
+                    <hr />
+                    <dl class="dl-horizontal">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Name)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Name)
+                        </dd>
+
+                        <dt>
+                            @Html.LabelFor(model => model.IMGPath)
+                        </dt>
+
+                        <dd>
+                            <img style="width:150px; height:150px" src="@Url.Content("~/Content/ImagesProduct/"+ Model.IMGPath)" />
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.PRICE)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.PRICE)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.LoaiNoiThat)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.LoaiNoiThat)
+                        </dd>
+
+                    </dl>
+
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-actions no-color">
+                            <input type="submit" value="Delete" class="btn btn-danger" /> |
+                            @Html.ActionLink("Back to List", "SanPham")
+                        </div>
+                    }
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
