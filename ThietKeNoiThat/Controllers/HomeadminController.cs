@@ -32,13 +32,11 @@ namespace ThietKeNoiThat.Controllers
         {
             return View();
         }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         [ValidateInput(false)]
         public ActionResult CreateLNT([Bind(Include = "IDLNT, Name, IMGPath,KieuChucNang")] PRODUCT sp, HttpPostedFileBase img)
         {
-
             var path = "";
             var filename = "";
             if (ModelState.IsValid)
@@ -58,10 +56,8 @@ namespace ThietKeNoiThat.Controllers
                 db.SubmitChanges();
                 return RedirectToAction("LoaiNoiThat");
             }
-
             return View(sp);
         }
-
         public LoaiNT getIDLNT(int id)
         {
             return db.LoaiNTs.Where(m => m.IDLNT == id).FirstOrDefault();
@@ -72,7 +68,6 @@ namespace ThietKeNoiThat.Controllers
             var editLNT = db.LoaiNTs.First(m => m.IDLNT == id);
             return View(editLNT);
         }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         [ValidateInput(false)]
@@ -113,12 +108,6 @@ namespace ThietKeNoiThat.Controllers
             db.SubmitChanges();
             return RedirectToAction("LoaiNoiThat");
         }
-        //public ActionResult NoiThatChung()
-        //{
-        //    var kieuchucnang = from p in db.KieuChucNangs
-        //                  select p;
-        //    return View(kieuchucnang);
-        //}
 
         public ActionResult TinTuc()
         {
@@ -130,13 +119,11 @@ namespace ThietKeNoiThat.Controllers
         {
             return View();
         }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         [ValidateInput(false)]
         public ActionResult CreateTT([Bind(Include = "IDTT, tentt, link,NoiDung,img")] TinTuc tt, HttpPostedFileBase img)
         {
-
             var path = "";
             var filename = "";
             if (ModelState.IsValid)
@@ -156,10 +143,8 @@ namespace ThietKeNoiThat.Controllers
                 db.SubmitChanges();
                 return RedirectToAction("TinTuc");
             }
-
             return View(tt);
         }
-
         public TinTuc getIDTT(int id)
         {
             return db.TinTucs.Where(m => m.IDTT == id).FirstOrDefault();
@@ -170,7 +155,6 @@ namespace ThietKeNoiThat.Controllers
             var editTT = db.TinTucs.First(m => m.IDTT == id);
             return View(editTT);
         }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         [ValidateInput(false)]
@@ -198,13 +182,11 @@ namespace ThietKeNoiThat.Controllers
             }
             return View(tt);
         }
-
         public ActionResult DeleteTT(int id)
         {
             var deletett = db.TinTucs.First(m => m.IDTT == id);
             return View(deletett);
         }
-
         [HttpPost]
         public ActionResult DeleteTT(int id, FormCollection collection)
         {
@@ -213,13 +195,11 @@ namespace ThietKeNoiThat.Controllers
             db.SubmitChanges();
             return RedirectToAction("TinTuc");
         }
-
         [HttpGet]
         public ActionResult Login()
         {
             return View();
         }
-
         [HttpPost]
         public ActionResult Login(FormCollection collection)
         {
@@ -248,12 +228,10 @@ namespace ThietKeNoiThat.Controllers
             }
             return this.SanPham();
         }
-
         public ActionResult Register()
         {
             return View();
         }
-
         public ActionResult Forgetpass()
         {
             return View();
@@ -263,7 +241,6 @@ namespace ThietKeNoiThat.Controllers
         {
             return View();
         }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         [ValidateInput(false)]
@@ -289,10 +266,9 @@ namespace ThietKeNoiThat.Controllers
                 db.SubmitChanges();
                 return RedirectToAction("SanPham");
             }
-            
+
             return View(sp);
         }
-
         public PRODUCT getID(int id)
         {
             return db.PRODUCTs.Where(m => m.ID == id).FirstOrDefault();
@@ -332,13 +308,11 @@ namespace ThietKeNoiThat.Controllers
             }
             return View(sp);
         }
-
         public ActionResult DeleteProduct(int id)
         {
             var deleteproduct = db.PRODUCTs.First(m => m.ID == id);
             return View(deleteproduct);
         }
-
         [HttpPost]
         public ActionResult DeleteProduct(int id, FormCollection collection)
         {
@@ -347,6 +321,5 @@ namespace ThietKeNoiThat.Controllers
             db.SubmitChanges();
             return RedirectToAction("SanPham");
         }
-      
     }
 }

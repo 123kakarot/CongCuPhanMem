@@ -12,14 +12,12 @@ namespace ThietKeNoiThat.Controllers
         {
             return View();
         }
-
         public ActionResult category()
         {
             ViewBag.Message = "Your application description page.";
 
             return View();
         }
-
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";

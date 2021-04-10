@@ -25,11 +25,11 @@ namespace ThietKeNoiThat.Controllers
             }
             return lstgiohang;
         }
-        public ActionResult ThemGioHang (int idproduct,string strURL)
+        public ActionResult ThemGioHang(int idproduct, string strURL)
         {
             List<GioHang> lstgiohang = laygiohang();
             GioHang sanpham = lstgiohang.Find(n => n.idproduct == idproduct);
-            if(sanpham==null)
+            if (sanpham == null)
             {
                 sanpham = new GioHang(idproduct);
                 lstgiohang.Add(sanpham);
@@ -46,7 +46,7 @@ namespace ThietKeNoiThat.Controllers
         {
             int tongsoluong = 0;
             List<GioHang> lstgiohang = Session["GioHang"] as List<GioHang>;
-            if(lstgiohang!=null)
+            if (lstgiohang != null)
             {
                 tongsoluong = lstgiohang.Sum(n => n.soluong);
             }
@@ -72,7 +72,7 @@ namespace ThietKeNoiThat.Controllers
             ViewBag.TongSoLuong = TongSoLuong();
             ViewBag.TongTien = TongTien();
             return View(lstgiohang);
-            
+
         }
         public ActionResult GioHangpartial()
         {
@@ -84,23 +84,23 @@ namespace ThietKeNoiThat.Controllers
         {
             List<GioHang> lstgiohang = laygiohang();
             GioHang sanpham = lstgiohang.SingleOrDefault(n => n.idproduct == imasp);
-            if(sanpham!=null)
+            if (sanpham != null)
             {
                 lstgiohang.RemoveAll(n => n.idproduct == imasp);
                 return RedirectToAction("GioHang");
             }
-            if(lstgiohang.Count==0)
+            if (lstgiohang.Count == 0)
             {
                 return RedirectToAction("Index", "User");
             }
             return RedirectToAction("GioHang");
 
         }
-        public ActionResult CapNhatGioHang( int imasp,FormCollection f)
+        public ActionResult CapNhatGioHang(int imasp, FormCollection f)
         {
             List<GioHang> lstgiohang = laygiohang();
             GioHang sanpham = lstgiohang.SingleOrDefault(n => n.idproduct == imasp);
-            if(sanpham!=null)
+            if (sanpham != null)
             {
                 sanpham.soluong = int.Parse(f["txtSoLuong"].ToString());
 

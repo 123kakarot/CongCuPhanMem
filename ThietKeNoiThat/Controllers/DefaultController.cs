@@ -19,13 +19,12 @@ namespace ThietKeNoiThat.Controllers
                           select p;
             return View();
         }
-       
         public ActionResult category()
         {
             return View();
         }
-        
-        public ActionResult chitiet( int id)
+
+        public ActionResult chitiet(int id)
         {
             var product = from s in db.PRODUCTs where s.ID == id select s;
             return View(product.Single());
@@ -55,18 +54,18 @@ namespace ThietKeNoiThat.Controllers
         {
             var tendn = collection["username"];
             var matkhau = collection["pass"];
-            if(string.IsNullOrEmpty(tendn))
+            if (string.IsNullOrEmpty(tendn))
             {
                 ViewData["Loi1"] = "Vui Lòng Nhập Tên Đăng Nhập !";
             }
-            else 
+            else
                 if (string.IsNullOrEmpty(matkhau))
-                {
-                    ViewData["Loi2"] = "Vui Lòng Nhập Mật Khẩu !";
-                }    
-                else
-                {
-                    Admin ad = db.Admins.SingleOrDefault(n => n.TaiKhoan == tendn && n.Password == matkhau);
+            {
+                ViewData["Loi2"] = "Vui Lòng Nhập Mật Khẩu !";
+            }
+            else
+            {
+                Admin ad = db.Admins.SingleOrDefault(n => n.TaiKhoan == tendn && n.Password == matkhau);
                 if (ad != null)
                 {
                     Session["TKadmin"] = ad.TenAdmin;
@@ -74,7 +73,7 @@ namespace ThietKeNoiThat.Controllers
                 }
                 else
                     ViewBag.ThongBao = "Tên Đăng Nhập Hoặc Mật Khẩu Không Đúng !";
-                }    
+            }
             return View();
         }
         [HttpGet]
@@ -83,7 +82,7 @@ namespace ThietKeNoiThat.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Dangki( FormCollection collection,User u)
+        public ActionResult Dangki(FormCollection collection, User u)
         {
             var hoten = collection["name"];
 
@@ -93,13 +92,13 @@ namespace ThietKeNoiThat.Controllers
             var nhaplaimatkhau = collection["repeat-pass"];
             var email = collection["email"];
             var sdt = collection["sdt"];
-            var ngaysinh =String.Format("{0:MM/dd/yyyy}", collection["username"]);
+            var ngaysinh = String.Format("{0:MM/dd/yyyy}", collection["username"]);
             var diachi = collection["diachi"];
-            if(String.IsNullOrEmpty(hoten))
+            if (String.IsNullOrEmpty(hoten))
             {
                 ViewData["Loi1"] = "Họ tên khách hàng không được để trống";
-            }    
-            else if(String.IsNullOrEmpty(tendn))
+            }
+            else if (String.IsNullOrEmpty(tendn))
             {
                 ViewData["Loi2"] = "Vui lòng nhập tên đăng nhập";
             }
@@ -131,7 +130,7 @@ namespace ThietKeNoiThat.Controllers
                 db.Users.InsertOnSubmit(u);
                 db.SubmitChanges();
                 return RedirectToAction("Dangnhap");
-            }                
+            }
             return this.Dangki();
         }
         public ActionResult Dangnhap()
@@ -176,7 +175,7 @@ namespace ThietKeNoiThat.Controllers
         public ActionResult getproduct()
         {
             var product = from p in db.PRODUCTs
-                          where p.Hide== true
+                          where p.Hide == true
                           select p;
             return PartialView(product.ToList());
         }
@@ -199,6 +198,5 @@ namespace ThietKeNoiThat.Controllers
             var product = from s in db.PRODUCTs where s.ID == id select s;
             return View(product);
         }
-        
     }
 }
