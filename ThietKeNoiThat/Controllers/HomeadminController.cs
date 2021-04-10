@@ -120,12 +120,7 @@ namespace ThietKeNoiThat.Controllers
         //    return View(kieuchucnang);
         //}
 
-        public ActionResult TinTuc()
-        {
-            var tintuc = from p in db.TinTucs
-                              select p;
-            return View(tintuc);
-        }
+       
         public ActionResult CreateTT()
         {
             return View();
@@ -223,19 +218,19 @@ namespace ThietKeNoiThat.Controllers
         [HttpPost]
         public ActionResult Login(FormCollection collection)
         {
-            var tendn = collection["email"];
-            var matkhau = collection["pass"];
-            if (string.IsNullOrEmpty(tendn))
+            var Tendn = collection["email"];
+            var Matkhau = collection["pass"];
+            if (string.IsNullOrEmpty(Tendn))
             {
                 ViewData["Loi1"] = "Chua nhap email";
             }
-            else if (string.IsNullOrEmpty(matkhau))
+            else if (string.IsNullOrEmpty(Matkhau))
             {
                 ViewData["Loi2"] = "Chua nhap mat khau";
             }
             else
             {
-                Admin ad = db.Admins.SingleOrDefault(n => n.TaiKhoan == tendn && n.Password == matkhau);
+                Admin ad = db.Admins.SingleOrDefault(n => n.TaiKhoan == Tendn && n.Password == Matkhau);
                 if (ad != null)
                 {
                     Session["tkadmin"] = ad;
@@ -243,7 +238,7 @@ namespace ThietKeNoiThat.Controllers
                 }
                 else
                 {
-                    ViewBag.Thongbao = "email hoac password chua dung";
+                    ViewBag.Thongbao = "Email hoặc Password chưa chính xác";
                 }
             }
             return this.SanPham();

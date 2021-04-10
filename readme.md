@@ -1,1 +1,1 @@
-1
+Cảnh<10/04>: xóa phần tin tức, chỉnh sửa chính tả và rà soát lỗi.
