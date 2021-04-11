@@ -1,0 +1,11 @@
+C:\Users\Administrator\OneDrive\Bureau\New folder\onlineshop\StaticResources\bin\Debug\StaticResources.dll
+C:\Users\Administrator\OneDrive\Bureau\New folder\onlineshop\StaticResources\bin\Debug\StaticResources.pdb
+C:\Users\Administrator\OneDrive\Bureau\New folder\onlineshop\StaticResources\bin\Debug\en\StaticResources.resources.dll
+C:\Users\Administrator\OneDrive\Bureau\New folder\onlineshop\StaticResources\obj\Debug\StaticResources.csprojAssemblyReference.cache
+C:\Users\Administrator\OneDrive\Bureau\New folder\onlineshop\StaticResources\obj\Debug\StaticResources.Resources.resources
+C:\Users\Administrator\OneDrive\Bureau\New folder\onlineshop\StaticResources\obj\Debug\StaticResources.Resources.en.resources
+C:\Users\Administrator\OneDrive\Bureau\New folder\onlineshop\StaticResources\obj\Debug\StaticResources.csproj.GenerateResource.cache
+C:\Users\Administrator\OneDrive\Bureau\New folder\onlineshop\StaticResources\obj\Debug\StaticResources.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\OneDrive\Bureau\New folder\onlineshop\StaticResources\obj\Debug\en\StaticResources.resources.dll
+C:\Users\Administrator\OneDrive\Bureau\New folder\onlineshop\StaticResources\obj\Debug\StaticResources.dll
+C:\Users\Administrator\OneDrive\Bureau\New folder\onlineshop\StaticResources\obj\Debug\StaticResources.pdb

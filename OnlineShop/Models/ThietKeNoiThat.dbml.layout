@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 18, 16.5" name="ThietKeNoiThat">
+  <DataContextMoniker Name="/ThietKeNoiThatDataContext" />
+  <nestedChildShapes>
+    <classShape Id="07172013-c9e3-44a0-b598-929cd43cf3af" absoluteBounds="0.75, 0.75, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/ThietKeNoiThatDataContext/About" />
+      <nestedChildShapes>
+        <elementListCompartment Id="def2b7da-8777-4011-bc45-c9b58d61c797" absoluteBounds="0.765, 1.21, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="94c0a35f-37f5-4834-bb9d-178026805f6f" absoluteBounds="3.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/ThietKeNoiThatDataContext/UserGroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c0bc527e-bdf1-48c2-ac83-7425547f0747" absoluteBounds="3.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="08ca0c5d-6e19-4dee-a0dd-7530153ef643" absoluteBounds="3.75, 2.75, 2, 3.6939111328124992">
+      <DataClassMoniker Name="/ThietKeNoiThatDataContext/Category" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ca9a9d4d-1648-496a-8dec-e5d532380e47" absoluteBounds="3.765, 3.21, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="555db857-a62b-4340-93a2-cde5db65930d" absoluteBounds="6.75, 0.75, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/ThietKeNoiThatDataContext/Contact" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9be8500b-1536-457b-9ff5-fa796ef3ea1b" absoluteBounds="6.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6e871e3f-0f22-420a-a6e7-bd00eac56d59" absoluteBounds="6.75, 3.75, 2, 4.4631168619791666">
+      <DataClassMoniker Name="/ThietKeNoiThatDataContext/Content" />
+      <nestedChildShapes>
+        <elementListCompartment Id="beeaa77b-0283-4f9c-9f26-070f219044ed" absoluteBounds="6.765, 4.21, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2984a2f8-6093-4fb1-bfda-a70d2cebe682" absoluteBounds="0.75, 7.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ThietKeNoiThatDataContext/ContentTag" />
+      <nestedChildShapes>
+        <elementListCompartment Id="57798f63-49e4-4fc8-80b6-703c0e701fc0" absoluteBounds="0.765, 8.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="18089979-3efe-44d0-aef5-7ef6cf31adcc" absoluteBounds="9.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/ThietKeNoiThatDataContext/Credential" />
+      <nestedChildShapes>
+        <elementListCompartment Id="09fd41b7-4db7-446e-adc7-727aca7c1966" absoluteBounds="9.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2d2e6899-385f-4936-b3ba-e41cd2d48412" absoluteBounds="0.75, 9.75, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/ThietKeNoiThatDataContext/Feedback" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8883caa9-19b5-4fe8-988d-ec7ebcbd8bcf" absoluteBounds="0.765, 10.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="721b13e1-6714-46e9-a840-2c4dcf9751e2" absoluteBounds="9.75, 2.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/ThietKeNoiThatDataContext/Footer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="65762286-a244-467c-a32f-2259bb2b6275" absoluteBounds="9.765, 3.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2db4bcab-e489-4972-a9a7-6a589275ada6" absoluteBounds="3.75, 9.75, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/ThietKeNoiThatDataContext/Language" />
+      <nestedChildShapes>
+        <elementListCompartment Id="84e19579-0522-42ee-8fd6-3947857c695b" absoluteBounds="3.765, 10.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="aee02229-02ad-4c56-a4f0-7debfd8f0cbf" absoluteBounds="9.75, 5.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/ThietKeNoiThatDataContext/Menu" />
+      <nestedChildShapes>
+        <elementListCompartment Id="db91039a-b364-471f-af72-ecd6f8358f5f" absoluteBounds="9.765, 6.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4393b0e6-b150-4bd4-983d-3518e0d05366" absoluteBounds="6.75, 9.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ThietKeNoiThatDataContext/MenuType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="764783cf-0bfa-4c36-9e0a-512312271c37" absoluteBounds="6.765, 10.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="614c767d-3a87-49b5-a7ab-0157dbbc6325" absoluteBounds="9.75, 8.75, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/ThietKeNoiThatDataContext/Order" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3c2313bd-54d2-4d86-9a9f-bef5ad989782" absoluteBounds="9.765, 9.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6af26420-d4b9-4b7f-8bbc-78524179751f" absoluteBounds="12.75, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ThietKeNoiThatDataContext/OrderDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="de23dfb5-e964-4c5a-9e16-9ffc1c170100" absoluteBounds="12.765, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="70e85eee-b788-4873-83bc-2752349bbb5c" absoluteBounds="12.75, 3.75, 2, 5.2323225911458318">
+      <DataClassMoniker Name="/ThietKeNoiThatDataContext/Product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5954c01a-7bf6-40a9-aae1-f3c1a9e4b2b6" absoluteBounds="12.765, 4.21, 1.9700000000000002, 4.672322591145833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ec0368b0-41ce-4f1e-8a90-793aae7bae50" absoluteBounds="3.75, 12.75, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/ThietKeNoiThatDataContext/ProductCategory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="68b89273-b150-4271-916e-5096751b4e54" absoluteBounds="3.765, 13.21, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="06d1dce5-c380-447c-8e9f-ef267133e028" absoluteBounds="6.75, 12.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ThietKeNoiThatDataContext/Role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="15635027-df6a-4d08-8ac9-66ec9cb3fd9d" absoluteBounds="6.765, 13.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ed5ab116-06ff-4795-917a-c00ae23c4487" absoluteBounds="12.75, 9.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/ThietKeNoiThatDataContext/Slide" />
+      <nestedChildShapes>
+        <elementListCompartment Id="122f6a2d-759f-4e63-ad41-5f1d11dc4ae9" absoluteBounds="12.765, 10.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bfefd8c9-3eff-40b2-ae46-5950cddc7f84" absoluteBounds="9.75, 13.75, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/ThietKeNoiThatDataContext/SystemConfig" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cc5fca0f-9739-4b7e-b070-92a6fa8bf497" absoluteBounds="9.765, 14.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a14b5e3a-6970-48eb-8147-9303864c3068" absoluteBounds="12.75, 13.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ThietKeNoiThatDataContext/Tag" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fc0360fa-5565-4c3c-a08a-74afc30b006e" absoluteBounds="12.765, 14.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="94016bab-dad0-4b31-826a-3f59fb2fd7f1" absoluteBounds="15.75, 0.75, 2, 3.6939111328124992">
+      <DataClassMoniker Name="/ThietKeNoiThatDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d644194e-83dc-49f2-ac86-7955c105d476" absoluteBounds="15.765, 1.21, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
